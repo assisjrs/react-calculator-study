@@ -1,13 +1,15 @@
-import './App.css';
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
+      <h1 className="App-header">
           React calculator study
-        </p>
-      </header>
+      </h1>
+
+      <div className="Cards">
+
+      </div>
     </div>
   );
 }
