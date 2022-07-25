@@ -28,6 +28,11 @@
     height: 30px;
 }
 
+.Calculator .Keyboard .LargeButton button {
+    width: 105px;
+    height: 30px;
+}
+
 .Calculator .Keyboard table {
     text-align: center;
 }

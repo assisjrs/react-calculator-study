@@ -6,32 +6,40 @@ const Keyboard = (props) => {
         <div className="Keyboard">
             <table align="center">
                 <tbody>
-                    <tr>
-                        <td> <Button number="7" /> </td>
-                        <td> <Button number="8" /> </td>
-                        <td> <Button number="9" /> </td>
-                        <td> <Button number="/" /> </td>
+                <tr>
+                        <td className="LargeButton" colSpan="2"> <Button
+                            character="AC" onClick={props.onClickAccumatorClear} /> </td>
+                        <td> <Button character="<" onClick={props.onClickBackspace}/> </td>
+                        <td> <Button character="/" onClick={props.onClickOperator} /> </td>
                     </tr>
 
                     <tr>
-                        <td> <Button number="4" /> </td>
-                        <td> <Button number="5" /> </td>
-                        <td> <Button number="6" /> </td>
-                        <td> <Button number="*" /> </td>
+                        <td> <Button character="7" onClick={props.onClickDigit}/> </td>
+                        <td> <Button character="8" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="9" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="*" onClick={props.onClickOperator} /> </td>
                     </tr>
 
                     <tr>
-                        <td> <Button number="1" /> </td>
-                        <td> <Button number="2" /> </td>
-                        <td> <Button number="3" /> </td>
-                        <td> <Button number="-" /> </td>
+                        <td> <Button character="4" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="5" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="6" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="-" onClick={props.onClickOperator} /> </td>
                     </tr>
 
                     <tr>
-                        <td> <Button number="0" /> </td>
-                        <td> <Button number="." /> </td>
-                        <td> <Button number="=" /> </td>
-                        <td> <Button number="+" /> </td>
+                        <td> <Button character="1" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="2" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="3" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="+" onClick={props.onClickOperator} /> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <Button character="0" onClick={props.onClickDigit} /> </td>
+                        <td> <Button character="." onClick={props.onClickDigit} /> </td>
+                        <td className="LargeButton" colSpan="2"> <Button
+                         character="=" onClick={props.onClickEquals} /> </td>
+
                     </tr>
                 </tbody>
             </table>

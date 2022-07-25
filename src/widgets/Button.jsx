@@ -1,7 +1,9 @@
 import React from "react";
 
 const Button = (props) => {
-    return <button onClick={props.onClick}>{props.number}</button>;
+    const character = props.character;
+
+    return <button onClick={_ => props.onClick(character)}>{character}</button>;
 }
 
 export default Button;
